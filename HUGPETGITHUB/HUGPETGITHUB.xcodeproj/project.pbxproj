@@ -19,8 +19,11 @@
 		24487CC029082A2000C01375 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 24487CBF29082A2000C01375 /* Lottie */; };
 		24487CC329082AA300C01375 /* NetworkImage in Frameworks */ = {isa = PBXBuildFile; productRef = 24487CC229082AA300C01375 /* NetworkImage */; };
 		24487CC529082AE600C01375 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24487CC429082AE600C01375 /* GoogleService-Info.plist */; };
-		2475066E290833A100879B61 /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475066D290833A100879B61 /* ServicesViewModel.swift */; };
-		24750670290833BC00879B61 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475066F290833BC00879B61 /* Services.swift */; };
+		247506762908631000879B61 /* AuthMangerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247506752908631000879B61 /* AuthMangerViewModel.swift */; };
+		247506792908636900879B61 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247506782908636900879B61 /* User.swift */; };
+		2475067D2908656400879B61 /* TabBarViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475067C2908656400879B61 /* TabBarViews.swift */; };
+		247506802908661800879B61 /* PhoneAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475067F2908661800879B61 /* PhoneAuthView.swift */; };
+		247506822908697100879B61 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 247506812908697100879B61 /* AppDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +33,13 @@
 		24487CA92908241000C01375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24487CAC2908241000C01375 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24487CC429082AE600C01375 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		2475066D290833A100879B61 /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
-		2475066F290833BC00879B61 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		247506752908631000879B61 /* AuthMangerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthMangerViewModel.swift; sourceTree = "<group>"; };
+		247506782908636900879B61 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2475067A290864BB00879B61 /* HUGPETGITHUB.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HUGPETGITHUB.entitlements; sourceTree = "<group>"; };
+		2475067B290864C500879B61 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2475067C2908656400879B61 /* TabBarViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViews.swift; sourceTree = "<group>"; };
+		2475067F2908661800879B61 /* PhoneAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhoneAuthView.swift; sourceTree = "<group>"; };
+		247506812908697100879B61 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,7 @@
 			children = (
 				24487CA42908240F00C01375 /* HUGPETGITHUB */,
 				24487CA32908240F00C01375 /* Products */,
+				24750671290841FF00879B61 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,7 +80,12 @@
 		24487CA42908240F00C01375 /* HUGPETGITHUB */ = {
 			isa = PBXGroup;
 			children = (
+				2475067B290864C500879B61 /* Info.plist */,
+				2475067A290864BB00879B61 /* HUGPETGITHUB.entitlements */,
 				24487CA52908240F00C01375 /* HUGPETGITHUBApp.swift */,
+				247506812908697100879B61 /* AppDelegate.swift */,
+				247506772908635900879B61 /* Models */,
+				24750674290862EE00879B61 /* ViewModels */,
 				24487CC629082B6F00C01375 /* Views */,
 				24487CA92908241000C01375 /* Assets.xcassets */,
 				24487CC429082AE600C01375 /* GoogleService-Info.plist */,
@@ -91,25 +105,50 @@
 		24487CC629082B6F00C01375 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				24750672290862CE00879B61 /* TabBarView */,
 				24487CA72908240F00C01375 /* ContentView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
 		};
-		24487CC729082B7600C01375 /* ViewModel */ = {
+		24750671290841FF00879B61 /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
-				2475066D290833A100879B61 /* ServicesViewModel.swift */,
 			);
-			path = ViewModel;
+			name = "Recovered References";
 			sourceTree = "<group>";
 		};
-		24487CC829082B7C00C01375 /* Model */ = {
+		24750672290862CE00879B61 /* TabBarView */ = {
 			isa = PBXGroup;
 			children = (
-				2475066F290833BC00879B61 /* Services.swift */,
+				2475067C2908656400879B61 /* TabBarViews.swift */,
+				24750673290862E700879B61 /* AuthView */,
 			);
-			path = Model;
+			path = TabBarView;
+			sourceTree = "<group>";
+		};
+		24750673290862E700879B61 /* AuthView */ = {
+			isa = PBXGroup;
+			children = (
+				2475067F2908661800879B61 /* PhoneAuthView.swift */,
+			);
+			path = AuthView;
+			sourceTree = "<group>";
+		};
+		24750674290862EE00879B61 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				247506752908631000879B61 /* AuthMangerViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		247506772908635900879B61 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				247506782908636900879B61 /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,10 +236,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				247506762908631000879B61 /* AuthMangerViewModel.swift in Sources */,
 				24487CA82908240F00C01375 /* ContentView.swift in Sources */,
-				24750670290833BC00879B61 /* Services.swift in Sources */,
+				247506792908636900879B61 /* User.swift in Sources */,
+				2475067D2908656400879B61 /* TabBarViews.swift in Sources */,
+				247506822908697100879B61 /* AppDelegate.swift in Sources */,
+				247506802908661800879B61 /* PhoneAuthView.swift in Sources */,
 				24487CA62908240F00C01375 /* HUGPETGITHUBApp.swift in Sources */,
-				2475066E290833A100879B61 /* ServicesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -326,12 +368,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HUGPETGITHUB/HUGPETGITHUB.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HUGPETGITHUB/Preview Content\"";
 				DEVELOPMENT_TEAM = XHRHNUK47B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HUGPETGITHUB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -355,12 +399,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = HUGPETGITHUB/HUGPETGITHUB.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HUGPETGITHUB/Preview Content\"";
 				DEVELOPMENT_TEAM = XHRHNUK47B;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = HUGPETGITHUB/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
