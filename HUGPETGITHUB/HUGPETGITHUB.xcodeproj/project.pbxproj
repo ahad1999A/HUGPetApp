@@ -21,6 +21,9 @@
 		24487CC529082AE600C01375 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24487CC429082AE600C01375 /* GoogleService-Info.plist */; };
 		2475066E290833A100879B61 /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475066D290833A100879B61 /* ServicesViewModel.swift */; };
 		24750670290833BC00879B61 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475066F290833BC00879B61 /* Services.swift */; };
+		A0D76F4A2908616200F7BCF6 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D76F492908616200F7BCF6 /* Pet.swift */; };
+		A0D76F4C290861A100F7BCF6 /* Packages.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D76F4B290861A100F7BCF6 /* Packages.swift */; };
+		A0D76F4E2908632600F7BCF6 /* ServicesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D76F4D2908632600F7BCF6 /* ServicesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		24487CC429082AE600C01375 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2475066D290833A100879B61 /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
 		2475066F290833BC00879B61 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
+		A0D76F492908616200F7BCF6 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		A0D76F4B290861A100F7BCF6 /* Packages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packages.swift; sourceTree = "<group>"; };
+		A0D76F4D2908632600F7BCF6 /* ServicesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				24487CA72908240F00C01375 /* ContentView.swift */,
+				A0D76F4D2908632600F7BCF6 /* ServicesView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -110,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				2475066F290833BC00879B61 /* Services.swift */,
+				A0D76F492908616200F7BCF6 /* Pet.swift */,
+				A0D76F4B290861A100F7BCF6 /* Packages.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -199,10 +208,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D76F4A2908616200F7BCF6 /* Pet.swift in Sources */,
 				24487CA82908240F00C01375 /* ContentView.swift in Sources */,
+				A0D76F4C290861A100F7BCF6 /* Packages.swift in Sources */,
 				24750670290833BC00879B61 /* Services.swift in Sources */,
 				24487CA62908240F00C01375 /* HUGPETGITHUBApp.swift in Sources */,
 				2475066E290833A100879B61 /* ServicesViewModel.swift in Sources */,
+				A0D76F4E2908632600F7BCF6 /* ServicesView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
