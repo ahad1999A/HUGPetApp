@@ -1,12 +1,31 @@
-//
-//  Services.swift
-//  HUGPETGITHUB
-//
-//  Created by Ahad Obaid Albaqami on 29/03/1444 AH.
-//
 
 import Foundation
 
-struct Services{
+
+struct Services : Identifiable{
+    let id: UUID = UUID()
+    var KindsOfPet: [PetTypes] = [.Cat]
+    var servicesImage: String
+    var name: String
+    var description: String
+    var typeOfServices: ServicesType = .Shower
     
+    
+    init(with firebaseDict: [String:Any] ){
+        
+        self.servicesImage = firebaseDict["servicesImage"] as? String ?? ""
+        self.name = firebaseDict["name"] as? String ?? ""
+        self.description = firebaseDict["description"] as? String ?? ""
+
+    }
 }
+//hhh
+
+enum ServicesType: String , CaseIterable{
+    case Shower = "Shower"
+    case Grooming = "Grooming"
+    case Vaccsination = "Vaccsination"
+    case Surgeries = "Surgeries"
+}
+
+
