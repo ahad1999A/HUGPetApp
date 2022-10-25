@@ -19,6 +19,8 @@
 		24487CC029082A2000C01375 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 24487CBF29082A2000C01375 /* Lottie */; };
 		24487CC329082AA300C01375 /* NetworkImage in Frameworks */ = {isa = PBXBuildFile; productRef = 24487CC229082AA300C01375 /* NetworkImage */; };
 		24487CC529082AE600C01375 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24487CC429082AE600C01375 /* GoogleService-Info.plist */; };
+		2475066E290833A100879B61 /* ServicesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475066D290833A100879B61 /* ServicesViewModel.swift */; };
+		24750670290833BC00879B61 /* Services.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2475066F290833BC00879B61 /* Services.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +30,8 @@
 		24487CA92908241000C01375 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24487CAC2908241000C01375 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		24487CC429082AE600C01375 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2475066D290833A100879B61 /* ServicesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServicesViewModel.swift; sourceTree = "<group>"; };
+		2475066F290833BC00879B61 /* Services.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Services.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 		24487CC729082B7600C01375 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				2475066D290833A100879B61 /* ServicesViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -104,6 +109,7 @@
 		24487CC829082B7C00C01375 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2475066F290833BC00879B61 /* Services.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -194,7 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				24487CA82908240F00C01375 /* ContentView.swift in Sources */,
+				24750670290833BC00879B61 /* Services.swift in Sources */,
 				24487CA62908240F00C01375 /* HUGPETGITHUBApp.swift in Sources */,
+				2475066E290833A100879B61 /* ServicesViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
