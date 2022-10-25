@@ -72,8 +72,6 @@
 			isa = PBXGroup;
 			children = (
 				24487CA52908240F00C01375 /* HUGPETGITHUBApp.swift */,
-				24487CC829082B7C00C01375 /* Model */,
-				24487CC729082B7600C01375 /* ViewModel */,
 				24487CC629082B6F00C01375 /* Views */,
 				24487CA92908241000C01375 /* Assets.xcassets */,
 				24487CC429082AE600C01375 /* GoogleService-Info.plist */,
